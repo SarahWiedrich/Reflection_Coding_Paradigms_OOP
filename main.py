@@ -32,3 +32,28 @@ print();
 print("Elements of array sorted in ascending order: ");    
 for i in range(0, len(arr)):    
     print(arr[i], end=" "); 
+
+# OOP
+class Podracer:
+    def __init__(self, max_speed, condition, price):
+        self.max_speed = max_speed
+        self.condition = ["perfect", "trashed", "repaired"]
+        self.price = price
+
+    def repair(self, condition):
+        return self.condition[2]
+
+class AnakinsPod(Podracer):
+    def __init__(self):
+        super().__init__()
+
+    def boost(max_speed):
+       speed = max_speed * 2
+    return speed
+
+class SebulbasPod(Podracer):
+    def __init__(self):
+        super().__init__()
+
+    def  flame_jet(self, condition):
+        return self.condition[1]
